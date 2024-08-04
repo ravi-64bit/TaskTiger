@@ -10,9 +10,9 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Playwrite+AR:wght@100..400&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <div class="box" id="heading">
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Beth+Ellen&family=Walter+Turncoat&display=swap" rel="stylesheet">        <div class="box" id="heading">
+            <h1 id="mainhead">TaskTiger</h1>
              <h1><%= dayTod %></h1>
         </div>
        
@@ -26,9 +26,12 @@
         
        
             <form class="item" method="post" action="/">
-                <input type="text" name="newTask" placeholder="Enter new task" autocomplete="off" required>
+                <input id="taskInput" type="text" name="newTask" placeholder="Enter new task" autocomplete="off" required>
                 <button type="submit" name="button"><span class="material-symbols-outlined">add_task</span></button>
             </form> 
         </div>
+        <footer>
+           <p id="footertext">To-Do or not To-Do? Ask Ravi ;) </p>
+        </footer>
     </body>
 </html>
