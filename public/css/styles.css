@@ -10,8 +10,23 @@ h1 {
   padding: 10px;
 }
 
+#error{
+  font-family: "Fredericka The Great",system-ui;
+  color: #e8303c;
+
+}
+
+
 .box {
   max-width: 400px;
+  margin: 50px auto;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+
+.errorbox{
+  max-width:fit-content;
   margin: 50px auto;
   background: white;
   border-radius: 5px;
@@ -64,7 +79,7 @@ form {
 #mainhead{
   font-family: "Press start 2P",system-ui;
   font-style: italic;
-  color: #e6a7c1;
+  color: #eee7fa;
 }
 
 button {

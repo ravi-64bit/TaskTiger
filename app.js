@@ -48,7 +48,7 @@ app.get("/rick",(req,res)=>{
 
 // add error route
 app.use((req, res, next) => {
-    res.status(404).send('404 Not Found: The page you are looking for does not exist.');
+    res.status(404).render('404');
 });
 
 app.listen(process.env.PORT || 3000,()=>{
