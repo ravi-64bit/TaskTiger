@@ -38,7 +38,6 @@ app.get("/work",(req,res)=>{
 });
 
 
-
 //add rickroll route with a beautiful video
 
 app.get("/rick",(req,res)=>{
