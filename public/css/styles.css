@@ -121,6 +121,10 @@ footer {
   text-align: center;
 }
 
+#contact{
+  font-size: larger;
+  color: whitesmoke;
+}
 
 #taskInput::placeholder{
   font-family: 'Courier New', Courier, monospace;
