@@ -1,31 +1,5 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-    <head>
-        <title>TaskTiger</title>
+<%- include("header") -%>
 
-        <!-- custom stylesheet -->
-        <link rel="stylesheet" href="css/styles.css">
-
-
-        <link rel="icon" href="images/icon.png" type="x-icon">
-
-        <!-- CDN -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-        <!-- icon -->
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-        
-        <!-- header fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Playwrite+AR:wght@100..400&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-        
-        <!-- footer font -->
-        <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Beth+Ellen&family=Walter+Turncoat&display=swap" rel="stylesheet">        
-        
-    </head>
-    <body>      
-        <div class="box" id="heading">
             <h1 id="mainhead">TaskTiger</h1>
              <h1><%= dayTod %></h1>
         </div>
@@ -43,9 +17,5 @@
                 <input id="taskInput" type="text" name="newTask" placeholder="Enter new task" autocomplete="off" required>
                 <button  type="submit" name="formButton" value="<%= dayTod %>"><span class="material-symbols-outlined">add_task</span></button>
             </form> 
-        </div>
-        <footer>
-           <p id="footertext">To-Do or not To-Do? Ask Ravi 😉 </p>
-        </footer>
-    </body>
-</html>
+            
+<%- include("footer") -%>

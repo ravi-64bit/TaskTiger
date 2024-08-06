@@ -1,6 +1,6 @@
 html {
   background-color: #E4E9FD;
-  background-image: -webkit-linear-gradient(65deg, #A683E3 50%, #E4E9FD 50%);
+  background-image: -webkit-linear-gradient(60deg, #201e43 50%, #134b70 50%);
   min-height: 1000px;
   font-family: 'helvetica neue';
 }
@@ -34,7 +34,7 @@ h1 {
 }
 
 #heading {
-  background-color: #A683E3;
+  background-color: #508c9b;
   text-align: center;
   font-family: "Playwrite AR","cursive";
 }
@@ -54,7 +54,7 @@ h1 {
 
 input:checked+p {
   text-decoration: line-through;
-  text-decoration-color: #A683E3;
+  text-decoration-color: #508c9b;
 }
 
 
@@ -87,8 +87,8 @@ button {
   width: 50px;
   border-radius: 50%;
   border-color: transparent;
-  background-color: #A683E3;
-  color: #fff;
+  background-color: #508c9b;
+  color: #eeeeee;
   font-size: 30px;
   padding-bottom: 6px;
   border-width: 0;
@@ -149,5 +149,5 @@ footer{
 
 #footertext{
   font-family: "Bangers", system-ui;
-
+  color: #011719;
 }

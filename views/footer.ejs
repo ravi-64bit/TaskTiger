@@ -2,5 +2,16 @@
 <footer>
    <p id="footertext">To-Do or not To-Do? Ask <span id="contact"> Ravi 😉 </span></p>
 </footer>
+
+
+   <!-- script -->
+   <script type="text/javascript">
+      function handleContact(){
+         document.getElementById("contact").addEventListener("click",()=>{
+            location.href="mailto:ravi004k@gmail.com";
+         });
+      }
+      handleContact();
+   </script>
 </body>
 </html>
