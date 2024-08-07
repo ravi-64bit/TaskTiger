@@ -4,7 +4,7 @@ const bodyParser = require("body-parser")
 const app=express();
 
 
-var id=2;
+var maintasksid=2;
 var tasks=[{"id":0,desc:"task1","status":0},{"id":1,"desc":"touch grass","status":1}];
 var worktasksId = 2;
 var worktasks=[{"id":0,desc:"task1","status":0},{"id":1,"desc":"touch grass","status":1}];
@@ -32,9 +32,23 @@ app.post("/",(req,res)=>{
     }
     else{
         tasks.push({"id":id,"desc":req.body.newTask,"status":0});
-        id++;
+        maintasksid++;
         res.redirect("/");
     }
+});
+
+app.post("/updated-tasks",(req,res)=>{
+    const {id,status}=req.body;
+    let task=tasks.find(t => t.id === parseInt(id));
+    if(task){
+        task.status=status;
+    }else{
+        task=worktasks.find(t => t.id === parseInt(id));
+        if(task){
+            task.status=status;
+        } 
+    }
+    res.sendStatus(200);
 });
 
 //work route
@@ -56,5 +70,5 @@ app.use((req, res, next) => {
 });
 
 app.listen(process.env.PORT || 3000,()=>{
-    console.log("server is running on port 3000 ");
+    console.log("server is running on port 3000!!!");
 });

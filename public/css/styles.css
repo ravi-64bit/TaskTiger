@@ -124,6 +124,7 @@ footer {
 #contact{
   font-size: larger;
   color: whitesmoke;
+  margin-left: 4px;
 }
 
 #taskInput::placeholder{
@@ -153,7 +154,7 @@ footer{
 
 #footertext{
   font-family: "Bangers", system-ui;
-  color: #011719;
+  color: #508c9b;
 }
 
 #rickvideo{
