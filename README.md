@@ -41,7 +41,7 @@ Once the server is running, you can access the app by navigating to http://local
 
 ### home page
 
-![homepage](screenshots/Screenshot (148).png)
+![homepage](https://github.com/ravi-64bit/TaskTiger/blob/master/screenshots/Screenshot%20(148).png)
 
 ## Contributing
 
