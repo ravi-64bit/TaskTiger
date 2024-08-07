@@ -43,7 +43,7 @@ Once the server is running, you can access the app by navigating to http://local
 
 ![homepage](screenshots/Screenshot (148).png)
 
-##Contributing
+## Contributing
 
 Contributions are welcome! If you would like to contribute to TaskTiger, please follow these steps:
 
