@@ -8,7 +8,7 @@
             <% for (let i=0;i<tasks.length;i++){%>
                 <div class="item">
                     <input type="checkbox">
-                    <p><%= tasks[i] %></p>
+                    <p style="text-decoration: <%= tasks[i].status ? 'line-through' : 'none' %>;"><%= tasks[i].desc %></p>
                 </div>
             <%}%>
         

@@ -3,8 +3,11 @@ const bodyParser = require("body-parser")
 
 const app=express();
 
-var tasks=[];
-var worktasks=[];
+
+var id=2;
+var tasks=[{"id":0,desc:"task1","status":0},{"id":1,"desc":"touch grass","status":1}];
+var worktasksId = 2;
+var worktasks=[{"id":0,desc:"task1","status":0},{"id":1,"desc":"touch grass","status":1}];
 
 app.set('view engine','ejs');
 app.use(bodyParser.urlencoded({extended:true}));
@@ -23,11 +26,13 @@ app.get("/",(req, res)=>{
 
 app.post("/",(req,res)=>{
     if(req.body.formButton === 'work tasks'){
-        worktasks.push(req.body.newTask);
+        worktasks.push({"id":id,"desc":req.body.newTask,"status":0});
+        worktasksId++;
         res.redirect("/work");
     }
     else{
-        tasks.push(req.body.newTask);
+        tasks.push({"id":id,"desc":req.body.newTask,"status":0});
+        id++;
         res.redirect("/");
     }
 });
